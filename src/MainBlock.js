@@ -2,7 +2,7 @@ import React from 'react';
 
 function BottomBlock({ title }) {
   return (
-    <div className="w-[74vw]  bg-gray-700 rounded-2xl p-3 ml-1.5 shadow-lg flex flex-col border-none justify-start items-center">
+    <div className="w-[74vw] bg-gray-700 rounded-2xl p-3 ml-1.5 shadow-lg flex flex-col border-none justify-start items-center">
       <div className="px-4 py-2 mb-5 text-xl font-bold text-black bg-pink-300 rounded-full">
         <p className="text-center">{title}</p>
       </div>
