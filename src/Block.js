@@ -1,25 +1,26 @@
 import React from 'react';
 
-function Block({ title, items, titleBgColor }) {
+function Block({ title, subtitle, items, titleBgColor }) {
   const isBlock5 = title === '5MIN Intraday Performers';
 
   return (
-    <div className="w-[300px] h-[300px] bg-gray-700 border-none m-2 rounded-2xl p-5 shadow-lg flex flex-col justify-between items-center">
-      <div className={`w-full h-8 rounded-xl ${titleBgColor}`}>
-        <h1 className="text-xl font-bold text-center text-black">{title}</h1>
+    <div className="h-24vh bg-gray-700 border-none m-1 mr-0 rounded-2xl p-3 shadow-lg flex flex-col justify-between items-center">
+      <div className={`w-full h-7 rounded-xl flex justify-around items-center ${titleBgColor}`}>
+        <h1 className="text-md font-bold text-start text-black">{title}</h1>
+        <span className="text-md font-bold text-start text-black">{subtitle}</span>
       </div>
 
       <div className="w-full">
         <div className="flex justify-around font-bold text-white">
-        {!isBlock5 &&<span>SYMBOL</span>}
+          {!isBlock5 &&<span>SYMBOL</span>}
           {!isBlock5 && <span>%CHANGE</span>}
         </div>
       </div>
 
-      <ul className="h-48 overflow-y-auto text-white list-none scrollbar-none scrollbar-thumb-gray-500 scrollbar-track-gray-300">
+      <ul className="h-48 overflow-y-auto text-white list-none" style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
         {items.map((item, index) => (
           <li key={index} className="flex justify-start p-2">
-            <span className="mr-8 text-start min-w-24">{item.name}</span>
+            <span className="mr-6 text-start min-w-24">{item.name}</span>
             {isBlock5 ? (
               <div className="flex flex-row items-start justify-start">
                 <div
@@ -32,7 +33,7 @@ function Block({ title, items, titleBgColor }) {
                 />
               </div>
             ) : (
-              <span className="ml-8 text-center">{item.price}</span>
+              <span className="ml-6 text-center">{item.price}</span>
             )}
           </li>
         ))}
