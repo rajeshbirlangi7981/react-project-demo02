@@ -4,14 +4,14 @@ function Block({ title, subtitle, items, titleBgColor }) {
   const isBlock5 = title === '5MIN Intraday Performers';
 
   return (
-    <div className="h-24vh bg-gray-700 border-none m-1 mr-0 rounded-2xl p-3 shadow-lg flex flex-col justify-between items-center">
-      <div className={`w-full h-7 rounded-xl flex justify-around items-center ${titleBgColor}`}>
+    <div className="h-24vh bg-gray-800 border-none m-1 mr-0 rounded-2xl p-3 shadow-lg flex flex-col justify-between items-center">
+      <div className={`w-full h-7 rounded-xl flex justify-around items-center  ${titleBgColor}`}>
         <h1 className="text-md font-bold text-start text-black">{title}</h1>
         <span className="text-md font-bold text-start text-black">{subtitle}</span>
       </div>
 
       <div className="w-full">
-        <div className="flex justify-around font-bold text-white">
+        <div className="flex justify-around font-bold text-white pt-2">
           {!isBlock5 &&<span>SYMBOL</span>}
           {!isBlock5 && <span>%CHANGE</span>}
         </div>

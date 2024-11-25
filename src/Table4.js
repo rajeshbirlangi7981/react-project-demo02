@@ -2,7 +2,7 @@ import React from 'react';
 
 function Table4({ title, items }) {
   return (
-    <div className="w-[50vw] h-[50vh] m-3 mx-1 bg-gray-700 rounded-xl p-5 shadow-md flex flex-col justify-start items-center">
+    <div className="w-[50vw] h-[50vh] m-3 mx-1 bg-gray-800 rounded-xl p-5 shadow-md flex flex-col justify-start items-center">
       {/* <div className="w-full px-4 py-2 mb-5 text-xl font-bold text-center bg-gray-300 rounded-full">
         {title}
       </div> */}

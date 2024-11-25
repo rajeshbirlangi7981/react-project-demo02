@@ -2,7 +2,7 @@ import React from 'react';
 
 function SideBlock({ title, items }) {
   return (
-    <div className="w-[25vw] bg-gray-700 rounded-xl p-5 shadow-md flex flex-col justify-start items-center">
+    <div className="w-[25vw] bg-gray-800 rounded-xl p-5 shadow-md flex flex-col justify-start items-center">
       <div className="w-full px-2 py-2 mb-2 text-xl font-bold text-center bg-blue-500 rounded-full">
         {title}
       </div>

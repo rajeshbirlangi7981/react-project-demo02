@@ -202,7 +202,7 @@ function App() {
       </div>
       
       <div className="flex flex-col items-start justify-between w-full h-auto gap-3 md:flex-row">
-        <MainBlock title="Intraday Performs & Intraday Buzz" content="This is the bottom block content" />
+        <MainBlock title="Intraday Performs" content="This is the bottom block content" />
         <SideBlock title="Saving" items={sideBlockItems} />
       </div>
 
