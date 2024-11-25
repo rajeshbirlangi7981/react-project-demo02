@@ -2,12 +2,12 @@ import React from 'react';
 
 function BottomBlock({ title }) {
   return (
-    <div className="w-[74vw] bg-gray-800 rounded-2xl p-3 ml-1.5 shadow-lg flex flex-col border-none justify-start items-center">
+    <div className="w-[74vw] bg-gray-800 rounded-2xl px-auto p-3 ml-1.5 shadow-lg flex flex-col border-none justify-start items-center">
       <div className="px-4 py-2 mb-5 text-xl font-bold text-black bg-pink-300 rounded-full">
         <p className="text-center">{title}</p>
       </div>
 
-      <div className="flex w-full h-full space-x-1">
+      <div className="flex w-[100%] h-full space-x-1">
         <div className="flex flex-col space-y-1">
           <div className="w-[140px] h-[125px] flex flex-col items-between justify-between text-white bg-blue-500 shadow-md">
             <div className='pl-1 pt-1'>MINDACORP</div>
@@ -223,7 +223,7 @@ function BottomBlock({ title }) {
         
         </div>
         
-        <div className="flex flex-col space-y-1 w-[200px]">
+        <div className="flex flex-col space-y-1 w-[100px]">
             <div className="w-[100px] h-[40px] flex items-between justify-between bg-red-400 text-white shadow-md">
               <div className='pl-1 pt-1'>CESC</div>
               <div className='pr-1 pt-1'>4.31</div>
